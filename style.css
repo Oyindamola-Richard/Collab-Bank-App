@@ -1,0 +1,17 @@
+.cont{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: space-between;
+}
+.eas{
+    font-weight: 700;
+    width: 550px;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 3.5em;
+}
+.smll{
+    font-size: 0.8em;
+    color: #aeaeb4;
+    letter-spacing: 1px;
+}

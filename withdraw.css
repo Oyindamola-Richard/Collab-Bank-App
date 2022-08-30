@@ -1,0 +1,38 @@
+section{
+    max-width: 49%;
+    margin: auto;
+}
+#headerWithdraw{
+    display: flex;
+    justify-content: space-between;
+    color: #769139;
+}
+#headerWithdraw h4{
+    margin-top: 5px;
+}
+.receipient{
+    padding-top: 40px;
+}
+.amount{
+    padding-top: 40px;
+}
+#currency{
+    display: flex;
+}
+#currency div{
+     width: 30px; height: 40px;
+}
+#currency div h4{
+    font-size: 30px !important;
+}
+button{
+    height: 70px;
+    border-radius: 10px;
+    width: 690px;
+    margin-top: 50px;
+    background-color: #769139;
+}
+input{
+    font-size: 120px;
+    height: 50px;
+}

@@ -7,6 +7,9 @@
 }
 .side-bar{
     border: 1px solid blue;
+    
+}
+.profile{
     display: grid;
     justify-content: center;
 }

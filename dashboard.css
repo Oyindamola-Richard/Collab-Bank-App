@@ -1,12 +1,14 @@
+body{
+    background-color: #ffffff;
+}
 .general-div{
-    border: 2px solid red ;
+    border: 1px solid red;
     margin: auto;
     height: fit-content;
     display: grid;
     grid-template-columns: 2fr 6fr;
 }
 .side-bar{
-    /* border: 1px solid blue; */
     background-color: rgba(225, 225, 225, 0.1);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
@@ -18,9 +20,8 @@
     border: 1px solid green;
 } */
 .ads-bar{
-    border: 1px solid yellow;
-    height: 200px;
-    /* background-image: url(/Img/ads.jpg); */
+    height: 170px;
+    background-image: url(/Img/ads.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,5 +40,5 @@
     /* margin: auto; */
 }
 li{
-    list-style-type: circle;
+    list-style-type: none;
 }

@@ -2,7 +2,6 @@ body{
     background-color: #ffffff;
 }
 .general-div{
-    border: 1px solid red;
     margin: auto;
     height: fit-content;
     display: grid;
@@ -29,7 +28,7 @@ body{
 .button-div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 15px;
+    gap: 25px;
 }
 .card{
     display: grid;

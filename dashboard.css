@@ -14,4 +14,8 @@
 .ads-bar{
     border: 1px solid yellow;
     height: 200px;
+    background-image: url(/Img/ads.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

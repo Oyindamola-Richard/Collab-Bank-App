@@ -1,0 +1,17 @@
+.general-div{
+    border: 2px solid red ;
+    margin: auto;
+    height: 610px;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+.side-bar{
+    border: 1px solid blue;
+    /* max-width: 500px; */
+    height: 600px;
+}
+.rightside-bar{
+    border: 1px solid green;
+    /* max-width: 400px; */
+    height: 600px;
+}

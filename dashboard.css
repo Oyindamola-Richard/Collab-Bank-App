@@ -26,5 +26,6 @@
 .card{
     display: grid;
     align-items: center;
-
+    max-width: 150px;
+    margin: auto;
 }

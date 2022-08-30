@@ -64,7 +64,7 @@ for (let index = 0; index < bankDetails.length; index++){
     }
 
 if (found){
-    window.location.href = "atm.html"
+    window.location.href = "dashboard.html"
 }
     else{
     alert("INVALID")

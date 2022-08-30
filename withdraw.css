@@ -25,7 +25,7 @@ section{
 #currency div h4{
     font-size: 30px !important;
 }
-button{
+#donebtn{
     height: 70px;
     border-radius: 10px;
     width: 690px;
@@ -35,4 +35,8 @@ button{
 input{
     font-size: 120px;
     height: 50px;
+}
+button{
+    background-color: white;
+    border: none;
 }

@@ -16,10 +16,15 @@ section{
 .receipient h5{
     padding-top: -80px;
 }
-#specificbtn{
+#specificdiv{
     background-color: azure;
     border: 0;
     margin-top: -5px;
+    text-align: center;
+    height: 60px;
+}
+.specificdrop{
+    padding-top: 15px;
 }
 .amount{
     padding-top: 40px;
@@ -35,7 +40,7 @@ section{
 #currency div h4{
     font-size: 30px !important;
 }
-button{
+#donebtn{
     height: 70px;
     border-radius: 5px;
     width: 690px;
@@ -47,4 +52,8 @@ button{
 input{
     font-size: 120px;
     height: 50px;
+}
+button{
+    background-color: white;
+    border: none;
 }

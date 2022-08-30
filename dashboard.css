@@ -25,7 +25,8 @@
 }
 .card{
     display: grid;
+    justify-content: center;
     align-items: center;
-    max-width: 150px;
-    margin: auto;
+    /* max-width: 200px; */
+    /* margin: auto; */
 }

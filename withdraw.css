@@ -10,6 +10,10 @@ section{
 #headerWithdraw h4{
     margin-top: 5px;
 }
+.container{
+    margin: auto;
+    max-width: 48%;
+}
 .receipient{
     padding-top: 40px;
 }
@@ -18,6 +22,7 @@ section{
 }
 #currency{
     display: flex;
+    background-color: azure;
 }
 #currency div{
      width: 30px; height: 40px;

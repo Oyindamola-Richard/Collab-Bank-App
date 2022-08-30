@@ -27,6 +27,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     /* max-width: 200px; */
     /* margin: auto; */
 }

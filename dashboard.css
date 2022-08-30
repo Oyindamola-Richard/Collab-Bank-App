@@ -6,16 +6,17 @@
     grid-template-columns: 2fr 6fr;
 }
 .side-bar{
-    border: 1px solid blue;
-    
+    /* border: 1px solid blue; */
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 .profile{
     display: grid;
     justify-content: center;
 }
-.rightside-bar{
+/* .rightside-bar{
     border: 1px solid green;
-}
+} */
 .ads-bar{
     border: 1px solid yellow;
     height: 200px;

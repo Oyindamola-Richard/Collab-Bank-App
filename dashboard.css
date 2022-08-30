@@ -1,7 +1,7 @@
 .general-div{
     border: 2px solid red ;
     margin: auto;
-    height: 610px;
+    height: fit-content;
     display: grid;
     grid-template-columns: 2fr 6fr;
 }

@@ -3,15 +3,15 @@
     margin: auto;
     height: 610px;
     display: grid;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 2fr 6fr;
 }
 .side-bar{
     border: 1px solid blue;
-    /* max-width: 500px; */
-    height: 600px;
 }
 .rightside-bar{
     border: 1px solid green;
-    /* max-width: 400px; */
-    height: 600px;
+}
+.ads-bar{
+    border: 1px solid yellow;
+    height: 200px;
 }

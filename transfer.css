@@ -10,6 +10,10 @@ section{
 #headerWithdraw h4{
     margin-top: 5px;
 }
+.container{
+    margin: auto;
+    max-width: 48%;
+}
 .receipient{
     padding-top: 20px;
 }
@@ -48,7 +52,6 @@ section{
     background-color: #769139;
     border: 0;
 }
-
 input{
     font-size: 120px;
     height: 50px;
@@ -56,4 +59,15 @@ input{
 button{
     background-color: white;
     border: none;
+}
+@media all and (max-width : 320px) {
+    
+    #donebtn{
+        height: 70px;
+        border-radius: 5px;
+        width: 150px;
+        margin-top: 50px;
+        background-color: #769139;
+        border: 0;
+    }
 }

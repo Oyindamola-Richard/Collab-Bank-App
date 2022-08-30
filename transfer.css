@@ -60,14 +60,18 @@ button{
     background-color: white;
     border: none;
 }
-@media all and (max-width : 320px) {
-    
+@media all and (min-width : 320px) and (max-width : 425px) {
     #donebtn{
-        height: 70px;
-        border-radius: 5px;
         width: 150px;
-        margin-top: 50px;
-        background-color: #769139;
-        border: 0;
+    }
+}
+@media all and (min-width : 426px) and (max-width : 768px) {
+    #donebtn{
+        max-width: 350px;
+    }
+}
+@media all and (min-width : 769px) and (max-width : 1024px) {
+    #donebtn{
+        max-width: 470px;
     }
 }

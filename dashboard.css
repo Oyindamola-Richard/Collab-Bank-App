@@ -23,3 +23,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.card{
+    display: grid;
+    align-items: center;
+
+}

@@ -19,3 +19,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.button-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

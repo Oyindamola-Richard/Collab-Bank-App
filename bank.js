@@ -62,7 +62,7 @@ const ooo = ()=>{
 const transfer = ()=>{
     window.location.href = "transfer.html"
 }
-const deposit = ()=>{
+const depositPage = ()=>{
     window.location.href = "deposit.html"
 }
 const withdrawal = ()=>{
@@ -85,7 +85,7 @@ const homebtn = () =>{
                 }
                 else{
                     balance = balance + amountEntered
-                    userBalance.innerHTML = `Balance: ₦ ${+ balance}`
+                    userBalance.innerHTML = 
                     let pinn = promt("Enter Your Trasaction Pin")
                     if(pinn == userPin){
                         window.location.href = "dashboard.html"

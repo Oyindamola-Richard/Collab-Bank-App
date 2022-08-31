@@ -10,7 +10,8 @@ function signup(){
         email: userEmail.value,
         dateOfBirth : userdateofbirth.value,
         password : userPassword.value,
-        accountNo : "7" + Math.round(Math.random()*10000000) 
+        accountNo : "7" + Math.round(Math.random()*10000000),
+        userPin : pin.value
 
     }
     if((firstName = firstname.value) && (lastName = lastname.value) && (email = userEmail.value) && (dateOfBirth = userdateofbirth.value) && (password = userPassword.value)){
@@ -73,3 +74,24 @@ const backward = () =>{
 const homebtn = () =>{
     window.location.href = "dashboard.html"
 }
+            let balance = 1000
+            function deposit(){
+                var amountEntered = Number(customerInput.value)
+                if(amountEntered<0){
+                    alert("Enter Valid Digit")
+                }
+                else if(amountEntered==""){
+                    alert("Kindly enter an amount")
+                }
+                else{
+                    balance = balance + amountEntered
+                    userBalance.innerHTML = `Balance: ₦ ${+ balance}`
+                    let pinn = promt("Enter Your Trasaction Pin")
+                    if(pinn == userPin){
+                        window.location.href = "dashboard.html"
+                    }
+                    else if(pinn != userPin){
+                        alert("Incorrect Password")
+                    }
+                }
+            }

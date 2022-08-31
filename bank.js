@@ -51,6 +51,18 @@ if (found){
     
 }
 }
+const ooo = ()=>{
+    allBankUser.map((items, index)=>{
+        customerName.innerHTML = `${allBankUser[index].firstName} ${allBankUser[index].lastName}`
+        customerMail.innerHTML = `E-mail: ${allBankUser[index].email}`
+        customerAcountNO.innerHTML = `Account No: ${allBankUser[index].accountNo}`
+    })
+}
+// const userinfo = ()=>{
+//     userinfo.innerHTML = "<p>Oyindamola Richard. O</p>"
+//                         "<p>Phone/No: 08134448972</p>"
+//                         "<p>Ac/No: 000123456</p>"
+// }
 function transfer(){
     window.location.href = "transfer.html"
 }

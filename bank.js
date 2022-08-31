@@ -72,6 +72,6 @@ if (found){
     
 }
 }
- const = ()=>{
-    window.location.href = ""
+ function transfer(){
+    window.location.href = "transfer.html"
  }

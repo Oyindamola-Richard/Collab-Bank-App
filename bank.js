@@ -3,7 +3,7 @@ var allBankUser = []
         allBankUser = JSON.parse(localStorage.getItem('customerDetails'))
     }
 
-function signup(){
+const signup = ()=>{
     var newCustomer ={
         firstName : firstname.value,
         lastName: lastname.value,
@@ -31,7 +31,7 @@ function signup(){
     localStorage.setItem("customerDetails",JSON.stringify(allBankUser))
 }
 
-function logIn(){
+const logIn = ()=>{
     var myUsername = username.value
     var userPassword = Password.value
     var allBankUser = JSON.parse (localStorage.getItem("customerDetails"))
@@ -78,7 +78,7 @@ const homebtn = () =>{
 }
 
 let balance = 1000
-function deposit(){
+const deposit = ()=>{
     let amountEntered = Number(customerInput.value)
 if(amountEntered < 0){
     alert("Enter Valid Digit")
@@ -93,14 +93,15 @@ else{
     let amountEntered =  Number( m[m.length-1].accountbalance) + Number(customerInput.value)
     m[m.length-1].accountbalance = amountEntered
     localStorage.customerDetails = JSON.stringify(m)
-    
-    var pinn = prompt('Enter Your Trasaction Pin')
-    if(pinn == userPin()){
-        window.location.href = "dashboard.html"
-    }
-    else if(pinn != userPin){
-        alert("Incorrect Password")
-    }
+    window.location.href = "dashboard.html"
+
+    // var pinn = prompt('Enter Your Trasaction Pin')
+    // if(pinn == userPin()){
+    //     window.location.href = "dashboard.html"
+    // }
+    // else if(pinn != userPin){
+    //     alert("Incorrect Password")
+    // }
 }
 }
 // function transfer(){

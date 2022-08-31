@@ -58,7 +58,7 @@ const ooo = ()=>{
         customerName.innerHTML = `${allBankUser[index].firstName} ${allBankUser[index].lastName}`
         customerMail.innerHTML = `E-mail: ${allBankUser[index].email}`
         customerAcountNO.innerHTML = `Account No: ${allBankUser[index].accountNo}`
-        Userbalance.innerHTML = `Account Balance: ₦ ${allBankUser[index].accountbalance}`
+        Userbalance.innerHTML = `Account Balance: $ ${allBankUser[index].accountbalance}`
     })
 }
 const depositPage = ()=>{
@@ -79,7 +79,7 @@ const homebtn = () =>{
 
 let balance = 1000
 const deposit = ()=>{
-    let amountEntered = Number(customerInput.value)
+    let amountEntered = Number(depositInput.value)
 if(amountEntered < 0){
     alert("Enter Valid Digit")
 }
@@ -90,7 +90,7 @@ else{
     let m = JSON.parse(localStorage.customerDetails)
     m[m.length-1]
     m[m.length-1].accountbalance
-    let amountEntered =  Number( m[m.length-1].accountbalance) + Number(customerInput.value)
+    let amountEntered =  Number( m[m.length-1].accountbalance) + Number(depositInput.value)
     m[m.length-1].accountbalance = amountEntered
     localStorage.customerDetails = JSON.stringify(m)
     window.location.href = "dashboard.html"
@@ -104,26 +104,27 @@ else{
     // }
 }
 }
-// function transfer(){
-//     var amountEntered = Number(customerInput.value)
-//     if(amountEntered>balance){
-//         disp.innerHTML = "Insufficient Fund"
-//         // alert("Insufficient Fund")
-//     }
-//     else if (amountEntered<0){
-//         disp.innerHTML = "Out of Bounds"
-//         // alert("Out of Bounds")
-//     }
-//     else if(amountEntered==""){
-//         disp.innerHTML = "Kindly enter an amount"
-//         // alert("Kindly enter an amount")
-//     }
-//     // else if(amountEntered!=Number){
-//     //     disp.innerHTML = "Invalid"
-//     // }
-//     else{
-//         balance = balance - amountEntered
-//         bba.innerHTML = "<h4>$" + balance + "</h3>"
-//         // alert("Withdrawal Successful and your current balance is $" + balance)
-//     }
-// }
+function transfer(){
+    var transferAmount = Number(transferInput.value)
+    if(transferAmount>balance){
+        alert("Insufficient Fund")
+    }
+    else if (transferAmount<0){
+        alert("Out of Bounds")
+    }
+    else if(transferAmount==""){
+        alert("Kindly enter an amount")
+    }
+    // else if(transferAmount != Number){
+    //     alert("Invalid")
+    // }
+    else{
+            let m = JSON.parse(localStorage.customerDetails)
+            m[m.length-1]
+            m[m.length-1].accountbalance
+            let transferAmount =  Number(m[m.length-1].accountbalance) - Number(transferInput.value)
+            m[m.length-1].accountbalance = transferAmount
+            localStorage.customerDetails = JSON.stringify(m)
+            window.location.href = "dashboard.html"
+    }
+}

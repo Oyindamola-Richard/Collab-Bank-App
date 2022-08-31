@@ -30,12 +30,12 @@ function signup(){
 }
 
 function logIn(){
-    var myUsername = userName.value
+    var myUsername = username.value
     var userPassword = Password.value
     var allBankUser = JSON.parse (localStorage.getItem("customerDetails"))
     var found = false
 for (let index = 0; index < allBankUser.length; index++){
-    if (allBankUser[index].firstName==myUsername && allBankUser[index].password==userPassword){
+    if (allBankUser[index].email==myUsername && allBankUser[index].password==userPassword){
         found = true
     alert ("login successfully")
     
@@ -45,7 +45,8 @@ if (found){
     window.location.href = "dashboard.html"
 }
     else{
-    alert("INVALID")
+        incorrect.innerHTML = "Incorrect Email or Password"
+        incorrect.style.color = "red"
     }
     
 }

@@ -75,3 +75,9 @@ if (found){
  function transfer(){
     window.location.href = "transfer.html"
  }
+ const backward = () =>{
+    window.location.href = "dashboard.html"
+}
+const homebtn = () =>{
+    window.location.href = "dashboard.html"
+}

@@ -61,13 +61,13 @@ const ooo = ()=>{
         Userbalance.innerHTML = `Account Balance: ₦ ${allBankUser[index].accountbalance}`
     })
 }
-const transfer = ()=>{
-    window.location.href = "transfer.html"
-}
 const depositPage = ()=>{
     window.location.href = "deposit.html"
 }
-const withdrawal = ()=>{
+const transferPage = ()=>{
+    window.location.href = "transfer.html"
+}
+const withdrawalPage = ()=>{
     window.location.href = "withdraw.html"
 }
 const backward = () =>{
@@ -103,3 +103,26 @@ else{
     }
 }
 }
+// function transfer(){
+//     var amountEntered = Number(customerInput.value)
+//     if(amountEntered>balance){
+//         disp.innerHTML = "Insufficient Fund"
+//         // alert("Insufficient Fund")
+//     }
+//     else if (amountEntered<0){
+//         disp.innerHTML = "Out of Bounds"
+//         // alert("Out of Bounds")
+//     }
+//     else if(amountEntered==""){
+//         disp.innerHTML = "Kindly enter an amount"
+//         // alert("Kindly enter an amount")
+//     }
+//     // else if(amountEntered!=Number){
+//     //     disp.innerHTML = "Invalid"
+//     // }
+//     else{
+//         balance = balance - amountEntered
+//         bba.innerHTML = "<h4>$" + balance + "</h3>"
+//         // alert("Withdrawal Successful and your current balance is $" + balance)
+//     }
+// }

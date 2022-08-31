@@ -72,9 +72,10 @@ if (found){
     
 }
 }
- function transfer(){
+function transfer(){
     window.location.href = "transfer.html"
- }
+}
+
  const backward = () =>{
     window.location.href = "dashboard.html"
 }

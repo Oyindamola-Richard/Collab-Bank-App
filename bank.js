@@ -10,7 +10,7 @@ function signup(){
     if((email = validEmail.test(userEmail.value)) && (password = validPassword.test(userPassword.value))){
         ifGoood = true
         alert("its okay")
-        window.location.href ="login.html"  ``
+        window.location.href ="login.html"
     }else{
         alert("fill in correctly")
     }

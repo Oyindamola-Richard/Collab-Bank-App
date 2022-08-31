@@ -63,11 +63,13 @@ const ooo = ()=>{
 //                         "<p>Phone/No: 08134448972</p>"
 //                         "<p>Ac/No: 000123456</p>"
 // }
-function transfer(){
+const transfer = ()=>{
     window.location.href = "transfer.html"
 }
-
- const backward = () =>{
+const withdrawal = ()=>{
+    window.location.href = "withdraw.html"
+}
+const backward = () =>{
     window.location.href = "dashboard.html"
 }
 const homebtn = () =>{

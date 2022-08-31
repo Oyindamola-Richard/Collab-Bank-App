@@ -58,7 +58,7 @@ const ooo = ()=>{
         customerName.innerHTML = `${allBankUser[index].firstName} ${allBankUser[index].lastName}`
         customerMail.innerHTML = `E-mail: ${allBankUser[index].email}`
         customerAcountNO.innerHTML = `Account No: ${allBankUser[index].accountNo}`
-        Userbalance.innerHTML = `Account Balance:${allBankUser[index].accountbalance}`
+        Userbalance.innerHTML = `Account Balance: ${allBankUser[index].accountbalance}`
     })
 }
 const transfer = ()=>{
@@ -76,33 +76,43 @@ const backward = () =>{
 const homebtn = () =>{
     window.location.href = "dashboard.html"
 }
-            let balance = 1000
-            function deposit(){
-                
-                // var amountEntered = Number(customerInput.value)
-                if(amountEntered<0){
-                    alert("Enter Valid Digit")
-                }
-                else if(amountEntered==""){
-                    alert("Kindly enter an amount")
-                }
-                else{
-                    balance = balance + amountEntered
-                    let m = JSON.parse(localStorage.customerDetails)
-                    m[m.length-1]
-                     m[m.length-1].accountbalance
-                   let amountupdate =  Number( m[m.length-1].accountbalance) + Number(customerInput.value)
-                   m[m.length-1].accountbalance = amountupdate
-                   localStorage.customerDetails = JSON.stringify(m)
-                    // var pinn = promt("Enter Your Trasaction Pin")
-                    // if(pinn == userPin){
-                    //     window.location.href = "dashboard.html"
-                    // }
-                    // else if(pinn != userPin){
-                    //     alert("Incorrect Password")
-                    // }
-                    // Userbalance.innerHTML = "<p>Balance: ₦" + balance +"</p>"
-                    window.location.href = "dashboard.html"
 
-                }
-            }
+let balance = 1000
+function deposit(){
+    let amountEntered = Number(customerInput.value)
+if(amountEntered < 0){
+    alert("Enter Valid Digit")
+}
+else if(amountEntered == ""){
+    alert("Kindly enter an amount")
+}
+else{
+    let m = JSON.parse(localStorage.customerDetails)
+    m[m.length-1]
+    m[m.length-1].accountbalance
+    let amountEntered =  Number( m[m.length-1].accountbalance) + Number(customerInput.value)
+    m[m.length-1].accountbalance = amountEntered
+    localStorage.customerDetails = JSON.stringify(m)
+    
+    var pinn = prompt('Enter Your Trasaction Pin')
+    if(pinn == pin.value){
+        window.location.href = "dashboard.html"
+    }
+    else if(pinn != userPin){
+        alert("Incorrect Password")
+    }
+    // Userbalance.innerHTML = "<p>Balance: ₦" + balance +"</p>"
+    
+    // window.location.href = "dashboard.html"
+}
+}
+
+// alert('Answer this Question')
+//     var wake = prompt('DO YOU HAVE CLASS TODAY?','yes or no')
+//     if(wake == "no"){
+//         alert('REST ON BRUV')
+//         location.reload() 
+//     }
+//     else if (wake == "yes"){
+//         alert('WAKE UP ALAYE')
+//     }

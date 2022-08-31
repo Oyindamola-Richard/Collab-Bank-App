@@ -4,21 +4,11 @@ var allBankUser = []
     }
 
 function signup(){
-    let validEmail = /^([\w]+)[@]([a-z]+)[.]([a-z]{1,5})$/
-    let validPassword = /^([A-Z])([\w]+)(.{1})$/
-    let ifGoood = false
-    if((email = validEmail.test(userEmail.value)) && (password = validPassword.test(userPassword.value))){
-        ifGoood = true
-        alert("its okay")
-        window.location.href ="login.html"
-    }else{
-        alert("fill in correctly")
-    }
     var newCustomer ={
         firstName : firstname.value,
         lastName: lastname.value,
-        dateOfBirth : userdateofbirth.value,
         email: userEmail.value,
+        dateOfBirth : userdateofbirth.value,
         password : userPassword.value,
         accountNo : "7" + Math.round(Math.random()*10000000),
         userPin : pin.value

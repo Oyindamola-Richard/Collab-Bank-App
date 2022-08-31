@@ -58,13 +58,11 @@ const ooo = ()=>{
         customerAcountNO.innerHTML = `Account No: ${allBankUser[index].accountNo}`
     })
 }
-// const userinfo = ()=>{
-//     userinfo.innerHTML = "<p>Oyindamola Richard. O</p>"
-//                         "<p>Phone/No: 08134448972</p>"
-//                         "<p>Ac/No: 000123456</p>"
-// }
 const transfer = ()=>{
     window.location.href = "transfer.html"
+}
+const deposit = ()=>{
+    window.location.href = "deposit.html"
 }
 const withdrawal = ()=>{
     window.location.href = "withdraw.html"

@@ -10,6 +10,10 @@ section{
 #headerWithdraw h4{
     margin-top: 5px;
 }
+.container{
+    margin: auto;
+    max-width: 48%;
+}
 .receipient{
     padding-top: 40px;
 }
@@ -18,6 +22,7 @@ section{
 }
 #currency{
     display: flex;
+    background-color: azure;
 }
 #currency div{
      width: 30px; height: 40px;
@@ -25,7 +30,7 @@ section{
 #currency div h4{
     font-size: 30px !important;
 }
-button{
+#donebtn{
     height: 70px;
     border-radius: 10px;
     width: 690px;
@@ -35,4 +40,45 @@ button{
 input{
     font-size: 120px;
     height: 50px;
+}
+button{
+    background-color: white;
+    border: none;
+}
+@media all and (max-width : 320px) {
+    section{
+        max-width: 90%;
+        margin: auto;
+    }
+    .container{
+        margin: auto;
+        max-width: 89%;
+    }
+    #donebtn{
+        width: 270px;
+    }
+}
+@media all and (min-width : 375px) and (max-width : 425px) {
+    section{
+        max-width: 90%;
+        margin: auto;
+    }
+    .container{
+        margin: auto;
+        max-width: 89%;
+    }
+    #donebtn{
+        width: 310px;
+
+    }
+}
+@media all and (min-width : 426px) and (max-width : 768px) {
+    #donebtn{
+        max-width: 350px;
+    }
+}
+@media all and (min-width : 769px) and (max-width : 1024px) {
+    #donebtn{
+        max-width: 470px;
+    }
 }

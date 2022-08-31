@@ -10,16 +10,25 @@ section{
 #headerWithdraw h4{
     margin-top: 5px;
 }
+.container{
+    margin: auto;
+    max-width: 48%;
+}
 .receipient{
     padding-top: 20px;
 }
 .receipient h5{
     padding-top: -80px;
 }
-#specificbtn{
+#specificdiv{
     background-color: azure;
     border: 0;
     margin-top: -5px;
+    text-align: center;
+    height: 60px;
+}
+.specificdrop{
+    padding-top: 15px;
 }
 .amount{
     padding-top: 40px;
@@ -35,7 +44,7 @@ section{
 #currency div h4{
     font-size: 30px !important;
 }
-button{
+#donebtn{
     height: 70px;
     border-radius: 5px;
     width: 690px;
@@ -43,8 +52,26 @@ button{
     background-color: #769139;
     border: 0;
 }
-
 input{
     font-size: 120px;
     height: 50px;
+}
+button{
+    background-color: white;
+    border: none;
+}
+@media all and (min-width : 320px) and (max-width : 425px) {
+    #donebtn{
+        width: 150px;
+    }
+}
+@media all and (min-width : 426px) and (max-width : 768px) {
+    #donebtn{
+        max-width: 350px;
+    }
+}
+@media all and (min-width : 769px) and (max-width : 1024px) {
+    #donebtn{
+        max-width: 470px;
+    }
 }

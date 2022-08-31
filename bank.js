@@ -58,7 +58,7 @@ const ooo = ()=>{
         customerName.innerHTML = `${allBankUser[index].firstName} ${allBankUser[index].lastName}`
         customerMail.innerHTML = `E-mail: ${allBankUser[index].email}`
         customerAcountNO.innerHTML = `Account No: ${allBankUser[index].accountNo}`
-        Userbalance.innerHTML = `Account Balance: ${allBankUser[index].accountbalance}`
+        Userbalance.innerHTML = `Account Balance: ₦ ${allBankUser[index].accountbalance}`
     })
 }
 const transfer = ()=>{
@@ -95,24 +95,11 @@ else{
     localStorage.customerDetails = JSON.stringify(m)
     
     var pinn = prompt('Enter Your Trasaction Pin')
-    if(pinn == pin.value){
+    if(pinn == userPin()){
         window.location.href = "dashboard.html"
     }
     else if(pinn != userPin){
         alert("Incorrect Password")
     }
-    // Userbalance.innerHTML = "<p>Balance: ₦" + balance +"</p>"
-    
-    // window.location.href = "dashboard.html"
 }
 }
-
-// alert('Answer this Question')
-//     var wake = prompt('DO YOU HAVE CLASS TODAY?','yes or no')
-//     if(wake == "no"){
-//         alert('REST ON BRUV')
-//         location.reload() 
-//     }
-//     else if (wake == "yes"){
-//         alert('WAKE UP ALAYE')
-//     }

@@ -72,3 +72,6 @@ if (found){
     
 }
 }
+ const = ()=>{
+    window.location.href = ""
+ }

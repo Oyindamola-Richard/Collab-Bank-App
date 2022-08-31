@@ -11,7 +11,8 @@ function signup(){
         dateOfBirth : userdateofbirth.value,
         password : userPassword.value,
         accountNo : "7" + Math.round(Math.random()*10000000),
-        userPin : pin.value
+        userPin : pin.value,
+        accountbalance: 1000,
 
     }
     if((firstName = firstname.value) && (lastName = lastname.value) && (email = userEmail.value) && (dateOfBirth = userdateofbirth.value) && (password = userPassword.value)){
@@ -57,6 +58,7 @@ const ooo = ()=>{
         customerName.innerHTML = `${allBankUser[index].firstName} ${allBankUser[index].lastName}`
         customerMail.innerHTML = `E-mail: ${allBankUser[index].email}`
         customerAcountNO.innerHTML = `Account No: ${allBankUser[index].accountNo}`
+        Userbalance.innerHTML = `Account Balance:${allBankUser[index].accountbalance}`
     })
 }
 const transfer = ()=>{
@@ -76,7 +78,8 @@ const homebtn = () =>{
 }
             let balance = 1000
             function deposit(){
-                var amountEntered = Number(customerInput.value)
+                
+                // var amountEntered = Number(customerInput.value)
                 if(amountEntered<0){
                     alert("Enter Valid Digit")
                 }
@@ -85,13 +88,21 @@ const homebtn = () =>{
                 }
                 else{
                     balance = balance + amountEntered
-                    userBalance.innerHTML = 
-                    let pinn = promt("Enter Your Trasaction Pin")
-                    if(pinn == userPin){
-                        window.location.href = "dashboard.html"
-                    }
-                    else if(pinn != userPin){
-                        alert("Incorrect Password")
-                    }
+                    let m = JSON.parse(localStorage.customerDetails)
+                    m[m.length-1]
+                     m[m.length-1].accountbalance
+                   let amountupdate =  Number( m[m.length-1].accountbalance) + Number(customerInput.value)
+                   m[m.length-1].accountbalance = amountupdate
+                   localStorage.customerDetails = JSON.stringify(m)
+                    // var pinn = promt("Enter Your Trasaction Pin")
+                    // if(pinn == userPin){
+                    //     window.location.href = "dashboard.html"
+                    // }
+                    // else if(pinn != userPin){
+                    //     alert("Incorrect Password")
+                    // }
+                    // Userbalance.innerHTML = "<p>Balance: ₦" + balance +"</p>"
+                    window.location.href = "dashboard.html"
+
                 }
             }

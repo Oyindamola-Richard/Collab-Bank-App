@@ -1,6 +1,4 @@
-body{
-    background-color: #ffffff;
-}
+
 .general-div{
     margin: auto;
     height: fit-content;
@@ -8,8 +6,9 @@ body{
     grid-template-columns: 2fr 6fr;
 }
 .side-bar{
-    background-color: rgba(225, 225, 225, 0.1);
+    background-color: #FF0000;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    height: 100vh;
 }
 .profile{
     display: grid;
@@ -33,4 +32,8 @@ body{
 }
 li{
     list-style-type: none;
+}
+.button-col{
+    background-color: #ff0000;
+    color: #FFffff;
 }

@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="/dashboard.css">
     <link rel="stylesheet" href="/bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/css/bootstrap.css">
 </head>
-<body onload="ooo()">
+<body onload="ooo()" style="background-color: #FFFFFF;">
     <div class="general-div">
         <div class="side-bar container">
             <div class="profile">
-                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" fill="#CDF857" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" fill="#ffffff" class="bi bi-person-fill" viewBox="0 0 16 16">
                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
-                  <p id="customerName" class="fw-bold"></p>
-                  <p id="customerMail" class="fw-bold"></p>
-                  <p id="customerAcountNO" class="fw-bold"></p>
+                  <p id="customerName" class="fw-bold text-light"></p>
+                  <p id="customerMail" class="fw-bold text-light"></p>
+                  <p id="customerAcountNO" class="fw-bold text-light"></p>
                   <div>
                       <ul class="">
-                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold" href="#">Edit Profile</a></li>
-                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold" href="#">Theme</a></li>
-                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold" href="#">Account Setting</a></li>
-                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold" href="#">Change Password</a></li>
-                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold" href="index.html">Log out</a></li>
+                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="#">Edit Profile</a></li>
+                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="#">Theme</a></li>
+                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="#">Account Setting</a></li>
+                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="#">Change Password</a></li>
+                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="index.html">Log out</a></li>
                       </ul>
                   </div>
             </div>
@@ -32,14 +32,14 @@
             <div class="ads-bar">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="2000">
-                        <img src="/Img/banking & money.jpg" class="d-block w-100" alt="..." height="200px">
+                      <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/Img/banking & money.jpg" class="d-block w-100" alt="..." height="270px">
                       </div>
-                      <div class="carousel-item" data-bs-interval="4000">
-                        <img src="/Img/money & payment.jpg" class="d-block w-100" alt="..." height="200px">
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/Img/money & payment.jpg" class="d-block w-100" alt="..." height="270px">
                       </div>
-                      <div class="carousel-item">
-                        <img src="/Img/cryptocurrency.jpg" class="d-block w-100" alt="..." height="200px">
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/Img/cryptocurrency.jpg" class="d-block w-100" alt="..." height="270px">
                       </div>
                     </div>
                   </div>
@@ -47,64 +47,64 @@
             </div>
             <div class="pt-3 pb-3 d-flex justify-content-between container">
                 <div>
-                    <button class="fw-bold fs-5 border-0 bg-light me-2" onclick="view()">↻ </button><span class="fw-bold fs-5 me-2" id="Userbalance"></span><button class="border-0 bg-light" onclick="block()"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <span class="fw-bold fs-5 me-2" id="Userbalance"></span><button class="border-0 bg-0" onclick="block()"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
                         <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
                         <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
                       </svg></button>
                 </div>
                 <div>
-                    <a class="nav-link border border-info ps-4 pe-4 pt-1 pb-1 rounded-5 text-info" href="#">Fund</a>
+                    <a class="nav-link border border-danger ps-md-5 pe-md-5 ps-sm-4 pe-sm-4 pt-1 pb-1 rounded-5 text-danger" href="#">Fund</a>
                 </div>
             </div>
                 <div class="button-div container">
                     <div class="card border-0">
-                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0" onclick="depositPage()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0 button-col" onclick="depositPage()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
                           </svg></button>
-                        <p class="card-item fs-sm-5 fw-bold mt-2 mb-2">Deposit</p>
+                        <p class="card-item fs-sm-5 fw-bold">Deposit</p>
                     </div>
-                    <div class="card border-0">
-                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0" onclick="transferPage()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                    <div class="card border-0 ">
+                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0 button-col" onclick="transferPage()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
                             <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
                           </svg></button>
-                        <p class="card-item fs-sm-5 fw-bold mt-2 mb-2">Transfer</p>
+                        <p class="card-item fs-sm-5 fw-bold">Transfer</p>
                     </div>
                     <div class="card border-0">
-                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0" onclick="withdrawalPage()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0 button-col" onclick="withdrawalPage()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
                             <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
                             <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                           </svg></button>
-                        <p class="card-item fs-sm-5 fw-bold mt-2 mb-2">Withdrawal</p>
+                        <p class="card-item fs-sm-5 fw-bold">Withdrawal</p>
                     </div>
                     <div class="card border-0">
-                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0 button-col"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-text-fill" viewBox="0 0 16 16">
                             <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z"/>
                           </svg></button>
-                        <p class="card-item fs-5-sm fw-bold mt-2 mb-2">Bill Payment</p>
+                        <p class="card-item fs-5-sm fw-bold">Bill Payment</p>
                     </div>
                     <div class="card border-0">
-                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0">⏱</button>
-                        <p class="card-item fs-sm-5 fw-bold mt-2 mb-2">Trasaction History</p>
+                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0 button-col">⏱</button>
+                        <p class="card-item fs-sm-5 fw-bold">Trasaction History</p>
+                    </div>
+                    <div class="card border-0 ll">
+                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0 button-col">⏱</button>
+                        <p class="card-item fs-sm-5 fw-bold">Investment</p>
                     </div>
                     <div class="card border-0">
-                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0">⏱</button>
-                        <p class="card-item fs-sm-5 fw-bold mt-2 mb-2">Investment</p>
+                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0 button-col">⏱</button>
+                        <p class="card-item fs-sm-5 fw-bold">Book Flight</p>
                     </div>
                     <div class="card border-0">
-                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0">⏱</button>
-                        <p class="card-item fs-sm-5 fw-bold mt-2 mb-2">Book Flight</p>
+                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0 button-col">⏱</button>
+                        <p class="card-item fs-sm-5 fw-bold">Refer&Earn</p>
                     </div>
                     <div class="card border-0">
-                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0">⏱</button>
-                        <p class="card-item fs-sm-5 fw-bold mt-2 mb-2">Refer&Earn</p>
+                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0 button-col">⏱</button>
+                        <p class="card-item fs-sm-5 fw-bold">Shoppy</p>
                     </div>
                     <div class="card border-0">
-                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0">⏱</button>
-                        <p class="card-item fs-sm-5 fw-bold mt-2 mb-2">Shoppy</p>
-                    </div>
-                    <div class="card border-0">
-                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0">⏱</button>
-                        <p class="card-item fs-sm-5 fw-bold mt-2 mb-2">Check In</p>
+                        <button class="ps-4 pe-4 pt-3 pb-3 rounded-4 border-0 button-col">⏱</button>
+                        <p class="card-item fs-sm-5 fw-bold">Check In</p>
                     </div>
                     </div>
                 </div>

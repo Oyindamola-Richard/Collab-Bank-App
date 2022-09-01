@@ -155,3 +155,6 @@ function withdraw(){
             window.location.href = "dashboard.html"
     }
 }
+const block = ()=>{
+    Userbalance.innerHTML = `Account Balance: $ ${'#####'}`
+}

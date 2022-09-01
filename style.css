@@ -6,12 +6,46 @@
 .eas{
     font-weight: 700;
     max-width: 550px;
-    color: black;
+    color: #700016;
     letter-spacing: 2px;
     font-size: 3.5em;
 }
 .smll{
     font-size: 1.1em;
-    max-width: 600px;
     letter-spacing: 1px;
+}
+@media all and (max-width:320px){
+    .cont{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    
+    }
+    .download{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media all and (min-width:321px) and (max-width:768px){
+    .cont{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        }
+        .eas{
+            max-width: 700px;
+        }
+        .download{
+            justify-content: center;
+            align-items: center;
+        }
+        .trust{
+            justify-content: center;
+            align-items: center;
+        }
+        .img2{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
 }

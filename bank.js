@@ -79,19 +79,19 @@ const homebtn = () =>{
 
 let balance = 1000
 const deposit = ()=>{
-    let amountEntered = Number(depositInput.value)
-if(amountEntered < 0){
+    let depositAmount = Number(depositInput.value)
+if(depositAmount < 0){
     alert("Enter Valid Digit")
 }
-else if(amountEntered == ""){
+else if(depositAmount == ""){
     alert("Kindly enter an amount")
 }
 else{
     let m = JSON.parse(localStorage.customerDetails)
     m[m.length-1]
     m[m.length-1].accountbalance
-    let amountEntered =  Number( m[m.length-1].accountbalance) + Number(depositInput.value)
-    m[m.length-1].accountbalance = amountEntered
+    let depositAmount =  Number( m[m.length-1].accountbalance) + Number(depositInput.value)
+    m[m.length-1].accountbalance = depositAmount
     localStorage.customerDetails = JSON.stringify(m)
     alert("Deposit Successful")
     window.location.href = "dashboard.html"
@@ -127,6 +127,31 @@ function transfer(){
             m[m.length-1].accountbalance = transferAmount
             localStorage.customerDetails = JSON.stringify(m)
             alert("Transfer Successful")
+            window.location.href = "dashboard.html"
+    }
+}
+function withdraw(){
+    var withdrawAmount = Number(withdrawInput.value)
+    if(withdrawAmount>balance){
+        alert("Insufficient Fund")
+    }
+    else if (withdrawAmount<0){
+        alert("Out of Bounds")
+    }
+    else if(withdrawAmount==""){
+        alert("Kindly enter an amount")
+    }
+    // else if(withdrawAmount != Number){
+    //     alert("Invalid")
+    // }
+    else{
+            let m = JSON.parse(localStorage.customerDetails)
+            m[m.length-1]
+            m[m.length-1].accountbalance
+            let withdrawAmount =  Number(m[m.length-1].accountbalance) - Number(withdrawInput.value)
+            m[m.length-1].accountbalance = withdrawAmount
+            localStorage.customerDetails = JSON.stringify(m)
+            alert("Withdrawal Successful")
             window.location.href = "dashboard.html"
     }
 }

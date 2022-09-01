@@ -15,9 +15,6 @@ body{
     display: grid;
     justify-content: center;
 }
-/* .rightside-bar{
-    border: 1px solid green;
-} */
 .ads-bar{
     height: 170px;
     /* background-image: url(/Img/ads.jpg); */

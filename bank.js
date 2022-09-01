@@ -93,6 +93,7 @@ else{
     let amountEntered =  Number( m[m.length-1].accountbalance) + Number(depositInput.value)
     m[m.length-1].accountbalance = amountEntered
     localStorage.customerDetails = JSON.stringify(m)
+    alert("Deposit Successful")
     window.location.href = "dashboard.html"
 
     // var pinn = prompt('Enter Your Trasaction Pin')
@@ -125,6 +126,7 @@ function transfer(){
             let transferAmount =  Number(m[m.length-1].accountbalance) - Number(transferInput.value)
             m[m.length-1].accountbalance = transferAmount
             localStorage.customerDetails = JSON.stringify(m)
+            alert("Transfer Successful")
             window.location.href = "dashboard.html"
     }
 }

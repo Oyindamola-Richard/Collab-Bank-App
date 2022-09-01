@@ -5,12 +5,13 @@
 }
 .eas{
     font-weight: 700;
-    width: 550px;
+    max-width: 550px;
     color: black;
     letter-spacing: 2px;
     font-size: 3.5em;
 }
 .smll{
     font-size: 1.1em;
+    max-width: 600px;
     letter-spacing: 1px;
 }

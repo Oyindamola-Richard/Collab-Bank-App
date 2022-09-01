@@ -15,12 +15,12 @@
     justify-content: center;
 }
 .ads-bar{
-    height: 200px;
+    height: 215px;
 }
 .button-div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 25px;
+    gap: 20px;
 }
 .card{
     display: grid;

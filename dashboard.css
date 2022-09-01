@@ -16,11 +16,7 @@ body{
     justify-content: center;
 }
 .ads-bar{
-    height: 170px;
-    /* background-image: url(/Img/ads.jpg); */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 200px;
 }
 .button-div{
     display: grid;

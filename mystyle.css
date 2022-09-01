@@ -16,10 +16,13 @@
     box-shadow: 2px 2px 20px 2px rgb(73,73,75,20%);
     height: 100vh;
 }
-h2{
-    margin-left: 24%;
+.up{
+    display: grid;
+    justify-content: center;
+    align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    font-size: 1.4em;
+    font-weight: 100;
 }
 .log a{
     color: red;

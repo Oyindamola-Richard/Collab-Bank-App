@@ -6,16 +6,16 @@ var allBankUser = []
 const signup = ()=>{
     var newCustomer ={
         firstName : firstname.value,
+        middleName : middlename.value,
         lastName: lastname.value,
         email: userEmail.value,
         dateOfBirth : userdateofbirth.value,
         password : userPassword.value,
         accountNo : "7" + Math.round(Math.random()*10000000),
-        userPin : pin.value,
         accountbalance: 1000,
 
     }
-    if((firstName = firstname.value) && (lastName = lastname.value) && (email = userEmail.value) && (dateOfBirth = userdateofbirth.value) && (password = userPassword.value)){
+    if((firstName = firstname.value) && (middleName = middlename.value) && (lastName = lastname.value) && (email = userEmail.value) && (dateOfBirth = userdateofbirth.value) && (password = userPassword.value)){
         window.location.href = "login.html",
         alert("Registration successful"),
         allBankUser.push(newCustomer),
@@ -55,7 +55,7 @@ if (found){
 }
 const ooo = ()=>{
     allBankUser.map((items, index)=>{
-        customerName.innerHTML = `${allBankUser[index].firstName} ${allBankUser[index].lastName}`
+        customerName.innerHTML = `${allBankUser[index].lastName} ${allBankUser[index].firstName} ${allBankUser[index].middleName}`
         customerMail.innerHTML = `E-mail: ${allBankUser[index].email}`
         customerAcountNO.innerHTML = `Account No: ${allBankUser[index].accountNo}`
         Userbalance.innerHTML = `Account Balance: $ ${allBankUser[index].accountbalance}`

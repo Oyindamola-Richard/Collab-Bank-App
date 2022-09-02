@@ -43,4 +43,30 @@ li{
         display: grid;
         grid-template-columns: 1fr;
     }
+    .button-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .card{
+        font-size: 0.6em;
+    }
+    #Userbalance{
+        font-size: 9.3em;
+    }
+}
+@media all and (min-width:321px) and (max-width:375px){
+    .general-div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .button-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .card{
+        font-size: 0.7em;
+    }
+    #Userbalance{
+        font-size: 9.3em;
+    }
 }

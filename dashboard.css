@@ -70,3 +70,19 @@ li{
         font-size: 9.3em;
     }
 }
+/* @media all and (min-width:376px) and (max-width:425px){
+    .general-div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .button-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .card{
+        font-size: 0.7em;
+    }
+    #Userbalance{
+        font-size: 9.3em;
+    }
+} */

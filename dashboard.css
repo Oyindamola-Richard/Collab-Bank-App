@@ -48,6 +48,12 @@ li{
     .card{
         font-size: 0.6em;
     }
+    .ads-bar{
+        height: 150px;
+    }
+    .carousel-img{
+        height: 150px;
+    }
 }
 @media all and (min-width:321px) and (max-width:375px){
     .general-div{

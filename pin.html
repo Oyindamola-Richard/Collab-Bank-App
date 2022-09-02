@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vpay</title>
+    <link rel="shortcut icon" href="/Img/vpay logo.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
 </head>
-<body>
-    <input type="password" name="" id="">
-    <input type="password" name="" id="">
+<body style="background-color: #F8F8F8;">
+
+    <div class="layer"> 
+        <br>
+        <div class="img2">
+            <img src="/Img/vpay logo.PNG" alt="" srcset="">
+        </div>
+        <br><br>
+            <p class="up">SET TRASACTION PIN</p>
+            <div id="edit" class=" mb-3 w-100 p-3 m-1 my-lg-3 d-inline-block ">
+                
+                <input type="password" placeholder="Password" class="form-control my-3" id="userpin" >
+            
+                <input type="password" placeholder="Confirm Password" class="form-control my-3" id="userconfirmpin" >
+                <div id="incorrect"></div>
+                <button onclick="setpin()" class="btn btn-outline-danger w-100 my-5 text-light d-inline-block bg-danger">
+                    Done
+                </button>
+            </div>
+
+        
+    </div>   
 
     <script src="/bank.js"></script>
 </body>

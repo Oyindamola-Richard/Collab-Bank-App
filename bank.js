@@ -93,16 +93,16 @@ else{
     let depositAmount =  Number( m[m.length-1].accountbalance) + Number(depositInput.value)
     m[m.length-1].accountbalance = depositAmount
     localStorage.customerDetails = JSON.stringify(m)
-    alert("Deposit Successful")
     window.location.href = "dashboard.html"
-
-    // var pinn = prompt('Enter Your Trasaction Pin')
-    // if(pinn == userPin()){
-    //     window.location.href = "dashboard.html"
-    // }
-    // else if(pinn != userPin){
-    //     alert("Incorrect Password")
-    // }
+    
+    var pinn = prompt('Enter Your Trasaction Pin')
+    if(pinn == userConfirmPin){
+        alert("Deposit Successful")
+        window.location.href = "dashboard.html"
+    }
+    else if(pinn != userConfirmPin){
+        alert("Incorrect Password")
+    }
 }
 }
 function transfer(){
@@ -157,4 +157,29 @@ function withdraw(){
 }
 const block = ()=>{
     Userbalance.innerHTML = `Account Balance: $ ${'#####'}`
+}
+
+var allBankPin = []
+    if(localStorage.customerPin){
+        allBankPin = JSON.parse(localStorage.getItem('customerPin'))
+    }
+const setpin = ()=>{
+    var userpinSet ={
+        userPin : userpin.value,
+        userConfirmPin : userconfirmpin.value,
+    }
+    if((userPin = userpin.value) && (muserConfirmPin = userconfirmpin.value)){
+        window.location.href = "dashboard.html",
+        alert("Trasaction Pin Set successful"),
+        allBankPin.push(userpinSet),
+        userpin.value = "",
+        userconfirmpin.value = ""
+    }
+    else if((userPin = userpin.value) != (muserConfirmPin = userconfirmpin.value)){
+        incorrect.innerHTML = "Enter Pin Correctly"
+    }
+    else{
+        alert("kindly provide all informations")
+    }
+    localStorage.setItem("customerPin",JSON.stringify(allBankPin))
 }

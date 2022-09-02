@@ -10,19 +10,28 @@
     <link rel="stylesheet" href="/bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/css/bootstrap.css">
 </head>
 <body style="height: 100vh;">
-    <nav class="navbar navbar-expand bg-light">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid container justify-content-between">
             <div class="navbar-brand">
                 <a href="#"><img src="Img/vpay logo.PNG" alt="" width="100px"></a>
             </div>
-            <div class="">
-                <ul class="nav col-sm-12 col-md-12 col-lg-12">
-                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">Products</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">Features</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">Contacts</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" style="color: red;" href="login.html">Login</a></li>
-                    <li class="nav-item border rounded-5" style="background-color: red;"><a class="nav-link text-light fw-bold" href="signup.html">Sign up</a></li>
-                </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header">
+                    <img src="/Img/vpay logo.PNG" alt="" srcset="">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                        <li class="nav-item ms-lg-3 ps-sm-2"><a class="nav-link text-dark fw-bold" href="#">Products</a></li>
+                        <li class="nav-item ms-lg-3 ps-sm-2"><a class="nav-link text-dark fw-bold" href="#">Features</a></li>
+                        <li class="nav-item ms-lg-3 ps-sm-2"><a class="nav-link text-dark fw-bold" href="#">Contacts</a></li>
+                        <li class="nav-item ms-lg-3 ps-sm-2"><a class="nav-link fw-bold" style="color: red;" href="login.html">Login</a></li>
+                        <li class="nav-item ms-lg-3 border rounded-5 ps-lg-2 pe-lg-2 ps-sm-2" style="background-color: red;"><a class="nav-link text-light fw-bold " href="signup.html">Sign up</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -45,8 +54,6 @@
             <img src="/Img/vpay.png" alt="" width="500px" height="490px">
         </div>
     </div>
-
-    <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
-    <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+    <script src="/bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/js/bootstrap.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ const signup = ()=>{
         email: userEmail.value,
         dateOfBirth : userdateofbirth.value,
         password : userPassword.value,
-        accountNo : "7" + Math.round(Math.random()*1000000000),
+        accountNo : "7" + Math.round(Math.random()*10000000000),
         accountbalance: 1000,
 
     }

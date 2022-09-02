@@ -86,3 +86,14 @@ li{
         font-size: 9.3em;
     }
 }
+@media all and (min-width:426px) and (max-width:768px){
+    .card{
+        font-size: 0.8em;
+    }
+    #Userbalance{
+        font-size: 9.3em;
+    }
+    .side-bar{
+        height: fit-content;
+    }
+}

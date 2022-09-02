@@ -106,4 +106,10 @@ li{
     #Userbalance{
         font-size: 1em;
     }
+    .ads-bar{
+        height: 210px;
+    }
+    .carousel-img{
+        height: 210px;
+    }
 }

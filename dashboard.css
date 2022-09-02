@@ -27,8 +27,6 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    /* max-width: 200px; */
-    /* margin: auto; */
 }
 li{
     list-style-type: none;
@@ -50,9 +48,6 @@ li{
     .card{
         font-size: 0.6em;
     }
-    #Userbalance{
-        font-size: 9.3em;
-    }
 }
 @media all and (min-width:321px) and (max-width:375px){
     .general-div{
@@ -65,9 +60,6 @@ li{
     }
     .card{
         font-size: 0.7em;
-    }
-    #Userbalance{
-        font-size: 9.3em;
     }
 }
 @media all and (min-width:376px) and (max-width:425px){
@@ -82,9 +74,6 @@ li{
     .card{
         font-size: 0.7em;
     }
-    #Userbalance{
-        font-size: 9.3em;
-    }
 }
 @media all and (min-width:426px) and (max-width:768px){
     .card{
@@ -95,5 +84,8 @@ li{
     }
     .side-bar{
         height: fit-content;
+    }
+    #Userbalance{
+        font-size: 1em;
     }
 }

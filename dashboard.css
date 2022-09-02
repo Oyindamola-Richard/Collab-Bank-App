@@ -86,6 +86,12 @@ li{
     .card{
         font-size: 0.7em;
     }
+    .ads-bar{
+        height: 170px;
+    }
+    .carousel-img{
+        height: 170px;
+    }
 }
 @media all and (min-width:426px) and (max-width:768px){
     .card{

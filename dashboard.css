@@ -70,7 +70,7 @@ li{
         font-size: 9.3em;
     }
 }
-/* @media all and (min-width:376px) and (max-width:425px){
+@media all and (min-width:376px) and (max-width:425px){
     .general-div{
         display: grid;
         grid-template-columns: 1fr;
@@ -85,4 +85,4 @@ li{
     #Userbalance{
         font-size: 9.3em;
     }
-} */
+}

@@ -21,20 +21,72 @@
     justify-content: center;
     
     }
-    .download{
-        justify-content: center;
-        align-items: center;
-    }
     .eas{
         max-width: 320px;
         font-size: 2.0em;
     }
+    .trust{
+        max-width: 320px;
+    }
     .smll{
-    font-size: 1.1em;
+    max-width: 320px;
+    font-size: 0.8em;
     letter-spacing: 1px;
+    }
+    .img3{
+        width: 310px;
+        height: 350px;
+    }
 }
+@media all and (min-width:321px) and (max-width:375px){
+    .cont{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        
+        }
+        .eas{
+            max-width: 320px;
+            font-size: 2.0em;
+        }
+        .trust{
+            max-width: 320px;
+        }
+        .smll{
+        max-width: 320px;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        }
+    .img3{
+        width: 365px;
+        height: 350px;
+    }
 }
-@media all and (min-width:321px) and (max-width:768px){
+@media all and (min-width:376px) and (max-width:425px){
+    .cont{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        
+        }
+        .eas{
+            max-width: 320px;
+            font-size: 2.0em;
+        }
+        .trust{
+            max-width: 320px;
+        }
+        .smll{
+        max-width: 320px;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        }
+    .img3{
+        width: 365px;
+        height: 350px;
+    }
+}
+@media all and (min-width:426px) and (max-width:768px){
     .cont{
         display: grid;
         grid-template-columns: 1fr;
@@ -51,7 +103,7 @@
             justify-content: center;
             align-items: center;
         }
-        .img2{
+        .img-div{
             display: grid;
             justify-content: center;
             align-items: center;

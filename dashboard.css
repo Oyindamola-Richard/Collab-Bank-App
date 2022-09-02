@@ -10,7 +10,7 @@
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
     height: 100vh;
 }
-.profile{
+.profile-div{
     display: grid;
     justify-content: center;
 }
@@ -36,4 +36,11 @@ li{
 .button-col{
     background-color: #ff0000;
     color: #FFffff;
+}
+
+@media all and (max-width:320px){
+    .general-div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

@@ -16,7 +16,6 @@
 .profile-div{
     display: grid;
     justify-content: center;
-    /* align-items: center; */
 }
 .ads-bar{
     height: 215px;
@@ -128,6 +127,10 @@ li{
     }
 }
 @media all and (min-width:769px) and (max-width:820px){
+    .general-div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .card{
         font-size: 0.8em;
     }
@@ -145,6 +148,31 @@ li{
     }
 }
 @media all and (min-width:821px) and (max-width:912px){
+    .general-div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card{
+        font-size: 0.8em;
+    }
+    .side-bar{
+        height: fit-content;
+    }
+    #Userbalance{
+        font-size: 1em;
+    }
+    .ads-bar{
+        height: 210px;
+    }
+    .carousel-img{
+        height: 210px;
+    }
+}
+@media all and (min-width:913px) and (max-width:991px){
+    .general-div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .card{
         font-size: 0.8em;
     }

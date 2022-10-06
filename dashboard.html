@@ -11,24 +11,35 @@
 </head>
 <body onload="ooo()" style="background-color: #FFFFFF;">
     <div class="general-div">
-        <div class="side-bar container">
-            <div class="profile-div">
-              <div class="profile">
-                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" fill="#ffffff" class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
-                  <p id="customerName" class="fw-bold text-light"></p>
-                  <p id="customerMail" class="fw-bold text-light"></p>
-                  <p id="customerAcountNO" class="fw-bold text-light"></p>
+        <div class="side-bar container navbar navbar-expand-lg">
+          <button style="color: #FFFFFF;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="profile-div offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+              <div class="offcanvas-header">
+                <div class="navbar-brand">
+                    <div class="brand"><img src="/Img/vpay logo.PNG"></div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-                  <div>
-                      <ul class="">
-                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="#">Edit Profile</a></li>
-                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="pin.html">Set Trasaction Pin</a></li>
-                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="#">Account Setting</a></li>
-                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="#">Change Password</a></li>
-                          <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="index.html">Log out</a></li>
-                      </ul>
-                  </div>
+              <div class="offcanvas-body">
+                <div class="profile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" fill="#ffffff" class="bi bi-person-fill" viewBox="0 0 16 16">
+                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+                    <p id="customerName" class="fw-bold text-light"></p>
+                    <p id="customerMail" class="fw-bold text-light"></p>
+                    <p id="customerAcountNO" class="fw-bold text-light"></p>
+                </div>
+                    <div>
+                        <ul class="">
+                            <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="#">Edit Profile</a></li>
+                            <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="pin.html">Set Trasaction Pin</a></li>
+                            <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="#">Account Setting</a></li>
+                            <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="#">Change Password</a></li>
+                            <li class="mt-4 "><a class="nav-link text-decoration-none fw-bold text-light" href="index.html">Log out</a></li>
+                        </ul>
+                    </div>
+              </div>
             </div>
         </div>
         <div class="rightside-bar">

@@ -10,6 +10,9 @@
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
     height: 100vh;
 }
+.offcanvas-body{
+    background-color: #FF0000;
+}
 .profile-div{
     display: grid;
     justify-content: center;

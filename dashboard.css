@@ -106,6 +106,10 @@ li{
     }
 }
 @media all and (min-width:426px) and (max-width:768px){
+    .general-div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .card{
         font-size: 0.8em;
     }

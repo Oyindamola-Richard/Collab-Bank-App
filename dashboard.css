@@ -16,6 +16,7 @@
 .profile-div{
     display: grid;
     justify-content: center;
+    /* align-items: center; */
 }
 .ads-bar{
     height: 215px;
